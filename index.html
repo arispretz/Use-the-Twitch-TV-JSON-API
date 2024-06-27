@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Twitch TV JSON API</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />  
+</head>
+<body>
+  <div id="app">
+<a id="logo" class="no-hover" href="https://www.twitch.tv" target="_blank"></a>
+<h1>Twitch API</h1>
+  <nav>
+    <a id="all" class="selected" href="#">View All</a>
+    <a id="live" href="#">Online</a>
+    <a id="offline" href="#">Offline</a>
+  </nav>
+  <form id="search" autocomplete="off">
+    <input id="input" type="text" placeholder="Search">
+    <button type="submit" value="submit">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+  </form>
+  <section id="main">
+    <ul id="streams"></ul>
+  </section>
+</div>
+<footer>
+  <h4>Created by Ariana Spretz - Copyright 2024</h4>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/script.js"></script>
+</body>
+</html>
